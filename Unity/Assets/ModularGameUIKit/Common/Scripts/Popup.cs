@@ -31,7 +31,7 @@ namespace Ricimi
                 animator.Play("Close");
             }
 
-            RemoveBackground();
+            if(m_background != null)  RemoveBackground();
             StartCoroutine(RunPopupDestroy());
         }
 
@@ -42,7 +42,7 @@ namespace Ricimi
         private IEnumerator RunPopupDestroy()
         {
             yield return new WaitForSeconds(destroyTime);
-            Destroy(m_background);
+            if(m_background != null) Destroy(m_background);
             Destroy(gameObject);
         }
 
