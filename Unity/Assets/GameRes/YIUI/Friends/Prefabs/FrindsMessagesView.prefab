@@ -270,9 +270,9 @@ MonoBehaviour:
   ComponentTable: {fileID: 0}
   DataTable: {fileID: 0}
   EventTable: {fileID: 0}
-  PkgName: 
-  ResName: 
-  UICodeType: 2
+  PkgName: Friends
+  ResName: FrindsMessagesView
+  UICodeType: 1
   WindowOption: 0
   PanelLayer: 3
   PanelOption: 0

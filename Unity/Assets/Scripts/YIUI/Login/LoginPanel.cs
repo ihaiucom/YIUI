@@ -4,6 +4,7 @@ using YIUIFramework;
 using UnityEngine;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using YIUI.Friends;
 using YIUI.Home;
 using YIUI.Loading;
 
@@ -100,6 +101,7 @@ namespace YIUI.Login
         protected override void OnEventSignupAction(int p1)
         {
             Debug.Log($"OnEventSignupAction: {p1}");
+            PanelMgr.Inst.OpenPanel<FriendsPanel>();
         }
        
         protected override void OnEventInputEmailAction(string p1)

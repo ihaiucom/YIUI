@@ -11,7 +11,7 @@ namespace YIUI.Friends
     /// Author  YIUI
     /// Date    2024.3.20
     /// </summary>
-    public sealed partial class FriendsPanel:FriendsPanelBase
+    public sealed partial class FriendsPanel:FriendsPanelBase,IYIUIOpen<EFriendsPanelViewEnum>
     {
     
         #region 生命周期
@@ -19,7 +19,10 @@ namespace YIUI.Friends
         protected override void Initialize()
         {
             Debug.Log($"FriendsPanel Initialize");
+            u_UITopBarView.InitPanel(this, PkgName);
+            u_DataTab.AddValueChangeAction(OnTabChange);
         }
+
 
         protected override void Start()
         {
@@ -39,12 +42,13 @@ namespace YIUI.Friends
         protected override void OnDestroy()
         {
             Debug.Log($"FriendsPanel OnDestroy");
+            u_DataTab.RemoveValueChangeAction(OnTabChange);
         }
 
         protected override async UniTask<bool> OnOpen()
         {
-            await UniTask.CompletedTask;
             Debug.Log($"FriendsPanel OnOpen");
+            await OnOpen(EFriendsPanelViewEnum.FrindsListView);
             return true;
         }
 
@@ -60,5 +64,15 @@ namespace YIUI.Friends
 
         #endregion Event结束
 
+        public async UniTask<bool> OnOpen(EFriendsPanelViewEnum p1)
+        {
+            u_DataTab.SetValue((int)p1);
+            await OpenViewAsync(p1.ToString());
+            return true;
+        }
+        private void OnTabChange(int now, int old)
+        {
+            OpenViewAsync(((EFriendsPanelViewEnum)now).ToString()).Forget();
+        }
     }
 }

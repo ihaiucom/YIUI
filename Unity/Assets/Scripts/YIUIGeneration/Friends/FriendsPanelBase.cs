@@ -24,16 +24,22 @@ namespace YIUI.Friends
         public const string PkgName = "Friends";
         public const string ResName = "FriendsPanel";
         
-        public override EWindowOption WindowOption => EWindowOption.None;
+        public override EWindowOption WindowOption => EWindowOption.BanTween;
         public override EPanelLayer Layer => EPanelLayer.Panel;
-        public override EPanelOption PanelOption => EPanelOption.None;
+        public override EPanelOption PanelOption => EPanelOption.TimeCache;
         public override EPanelStackOption StackOption => EPanelStackOption.VisibleTween;
         public override int Priority => 0;
+        protected override float CachePanelTime => 10;
+
+        public UnityEngine.UI.ToggleGroup u_ComTogglesToggleGroup { get; private set; }
+        public YIUIBind.UIDataValueInt u_DataTab { get; private set; }
         public YIUI.Common.TopBarView u_UITopBarView { get; private set; }
 
         
         protected sealed override void UIBind()
         {
+            u_ComTogglesToggleGroup = ComponentTable.FindComponent<UnityEngine.UI.ToggleGroup>("u_ComTogglesToggleGroup");
+            u_DataTab = DataTable.FindDataValue<YIUIBind.UIDataValueInt>("u_DataTab");
             u_UITopBarView = CDETable.FindUIBase<YIUI.Common.TopBarView>("TopBarView");
 
         }

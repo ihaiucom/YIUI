@@ -174,7 +174,8 @@ namespace YIUIFramework
             
             //在这里打开你的第一个界面
             // PanelMgr.Inst.OpenPanel<LoginPanel>();
-            PanelMgr.Inst.OpenPanel<FriendsPanel>();
+            // PanelMgr.Inst.OpenPanel<FriendsPanel>();
+            PanelMgr.Inst.OpenPanel<FriendsPanel, EFriendsPanelViewEnum>(EFriendsPanelViewEnum.FrindsMessagesView);
         }
 
         
