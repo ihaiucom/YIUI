@@ -20,7 +20,7 @@ namespace YIUIFramework
             uiBase.SetActive(true);
             obj.transform.localScale = m_AnimScale;
 
-             obj.transform.DOScale(Vector3.one, time);
+            await obj.transform.DOScale(Vector3.one, time);
         }
 
         //淡出
@@ -31,7 +31,7 @@ namespace YIUIFramework
 
             obj.transform.localScale = Vector3.one;
 
-             obj.transform.DOScale(m_AnimScale, time);
+            await obj.transform.DOScale(m_AnimScale, time);
 
             uiBase.SetActive(false);
             obj.transform.localScale = Vector3.one;
