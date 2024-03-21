@@ -1048,7 +1048,7 @@ MonoBehaviour:
   ResName: HomePanel
   UICodeType: 0
   WindowOption: 1024
-  PanelLayer: 4
+  PanelLayer: 3
   PanelOption: 0
   PanelStackOption: 2
   ViewWindowType: 0
@@ -1197,6 +1197,7 @@ MonoBehaviour:
     - {fileID: 6574724664989345851}
     - {fileID: 3822332022794769375}
     - {fileID: 7395010966701779305}
+    - {fileID: 4957883041521007634}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -1215,7 +1216,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 
@@ -1475,6 +1476,89 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: u_EventOpenPanel
+    - Name: $v
+      Entry: 7
+      Data: 20|YIUIBind.UIEventP1`1[[System.String, mscorlib]], YIUIFramework
+    - Name: m_EventName
+      Entry: 1
+      Data: u_EventOpenPanel
+    - Name: AllEventParamType
+      Entry: 7
+      Data: 21|System.Collections.Generic.List`1[[YIUIBind.EUIEventParamType, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnRemoveAction
+      Entry: 7
+      Data: 22|System.Action`1[[YIUIBind.UIEventBase, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 9
+      Data: 5
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveUIEvent
+    - Name: delegateType
+      Entry: 9
+      Data: 6
+    - Name: signature
+      Entry: 7
+      Data: 23|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[YIUIBind.UIEventBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -1482,7 +1566,7 @@ MonoBehaviour:
       Data: 
     - Name: AllEventParamType
       Entry: 7
-      Data: 20|System.Collections.Generic.List`1[[YIUIBind.EUIEventParamType, YIUIFramework]],
+      Data: 25|System.Collections.Generic.List`1[[YIUIBind.EUIEventParamType, YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -4211,7 +4295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2261472998179512423, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2261472998179512423, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4331,12 +4415,26 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1252901717451898762, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2231920421396658124}
+    - targetCorrespondingSourceObject: {fileID: 1252901717451898762, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4957883041521007634}
   m_SourcePrefab: {fileID: 100100000, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
 --- !u!224 &2901854266818401834 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 275097505980224680, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
   m_PrefabInstance: {fileID: 3140172970251879042}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3816377475777503973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2261472998179512423, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
+  m_PrefabInstance: {fileID: 3140172970251879042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4248884378196245768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4248884378196245768 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1252901717451898762, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}
@@ -4349,12 +4447,136 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4248884378196245768}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24fd4eaa17e3e44c79bf1b6d380a4944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   popupPrefab: {fileID: 7853281891601803069, guid: 68e64f96b4ca64e0cb463e1b9d2e343f, type: 3}
+--- !u!114 &4957883041521007634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4248884378196245768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c39285dc12489e8ed800d950b32b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 3395196482597184123}
+    - {fileID: 4957883041521007634}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_EventTable
+      Entry: 10
+      Data: 0
+    - Name: m_EventName
+      Entry: 1
+      Data: u_EventOpenPanel
+    - Name: m_UIEvent
+      Entry: 7
+      Data: 0|YIUIBind.UIEventP1`1[[System.String, mscorlib]], YIUIFramework
+    - Name: m_EventName
+      Entry: 1
+      Data: u_EventOpenPanel
+    - Name: AllEventParamType
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[YIUIBind.EUIEventParamType, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnRemoveAction
+      Entry: 7
+      Data: 2|System.Action`1[[YIUIBind.UIEventBase, YIUIFramework]], mscorlib
+    - Name: target
+      Entry: 10
+      Data: 0
+    - Name: declaringType
+      Entry: 7
+      Data: 3|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIBind.UIBindEventTable, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: methodName
+      Entry: 1
+      Data: OnRemoveUIEvent
+    - Name: delegateType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Action`1[[YIUIBind.UIEventBase, YIUIFramework]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: signature
+      Entry: 7
+      Data: 5|System.Type[], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: YIUIBind.UIEventBase, YIUIFramework
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_Binds
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[YIUIBind.UIEventBind, YIUIFramework]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_SkipWhenDrag: 0
+  m_Selectable: {fileID: 3816377475777503973}
+  m_ExtraParam: FriendsPanel
 --- !u!224 &5415787468047479247 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6970618602099503949, guid: 35d1660df2d3b4945826a572d2cc875f, type: 3}

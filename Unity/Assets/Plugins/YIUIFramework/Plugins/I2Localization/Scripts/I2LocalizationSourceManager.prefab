@@ -26,12 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561847519761816000}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3465988004208473039
 MonoBehaviour:
@@ -49,11 +50,73 @@ MonoBehaviour:
     UserAgreesToHaveItOnTheScene: 0
     UserAgreesToHaveItInsideThePluginsFolder: 0
     GoogleLiveSyncIsUptoDate: 1
-    mTerms: []
+    mTerms:
+    - Term: Sign up
+      TermType: 0
+      Description: "\u6CE8\u518C"
+      Languages:
+      - "\u6CE8\u518C"
+      - Sign Up
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Email
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u90AE\u7BB1"
+      - Email
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Password
+      TermType: 0
+      Description: "\u5BC6\u7801"
+      Languages:
+      - "\u5BC6\u7801"
+      - Password
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Log In
+      TermType: 0
+      Description: "\u767B\u5F55"
+      Languages:
+      - "\u767B\u5F55"
+      - Log In
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Remembe me
+      TermType: 0
+      Description: "\u8BB0\u4F4F\u767B\u5F55\u8D26\u53F7"
+      Languages:
+      - "\u8BB0\u4F4F\u767B\u5F55\u8D26\u53F7\u3002"
+      - Remember me.
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Forgot passwod
+      TermType: 0
+      Description: "\u5FD8\u8BB0\u5BC6\u7801\uFF1F"
+      Languages:
+      - "\u5FD8\u8BB0\u5BC6\u7801\uFF1F"
+      - Forgot passwod?
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Don t Have an account?
+      TermType: 0
+      Description: "\u6CA1\u6709\u8D26\u53F7\uFF1F"
+      Languages:
+      - "\u6CA1\u6709\u8D26\u53F7\uFF1F"
+      - "Don\u2019t Have an account?"
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
-    mLanguages: []
+    mLanguages:
+    - Name: Chinese
+      Code: zh
+      Flags: 0
+    - Name: English
+      Code: en
+      Flags: 0
     IgnoreDeviceLanguage: 1
     _AllowUnloadingLanguages: 0
     Google_WebServiceURL: 
@@ -130,4 +193,4 @@ MonoBehaviour:
     SerializationNodes: []
   m_LanguageSource: {fileID: 3465988004208473039}
   m_UseRuntimeModule: 0
-  m_DefaultLanguage: Chinese
+  m_DefaultLanguage: English

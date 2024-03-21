@@ -1,0 +1,13 @@
+﻿Key,Type,Desc,Chinese
+Don t Have an account?,Text,,没有账号？
+Email,Text,,邮件
+Forgot password?,Text,,忘记密码？
+Language Select,Text,,语言选择
+Log In,Text,,登录
+Password,Text,,密码
+Remembe me,Text,,记住登录账号。
+Remember me.,Text,,记住登录账号。
+Sign up,Text,,注册
+Sign up.,Text,,注册。
+icon_country_flag_chn,Sprite,,icon_country_flag_chn
+中文,Text,,中文

@@ -4,6 +4,7 @@ using YIUIFramework;
 using UnityEngine;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using YIUI.Login;
 
 namespace YIUI.Home
 {
@@ -69,6 +70,7 @@ namespace YIUI.Home
         protected override void OnEventClickBackBtnAction()
         {
             Close();
+            m_PanelMgr.OpenPanel<LoginPanel>();
         }
        
         protected override void OnEventClickCharacterPreBtnAction()
@@ -91,6 +93,11 @@ namespace YIUI.Home
             SetShowModel(index);
         }
         
+       
+        protected override void OnEventOpenPanelAction(string p1)
+        {
+            m_PanelMgr.OpenPanel(p1);
+        }
         #endregion Event结束
 
         private void SetShowModel(int index)

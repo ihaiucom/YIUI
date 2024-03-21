@@ -168,16 +168,16 @@ namespace YIUIFramework
         {
             //以下是YIUI中已经用到的管理器 在这里初始化
             //不需要的功能可以删除
-            //await MgrCenter.Inst.Register(I2LocalizeMgr.Inst);
+            await MgrCenter.Inst.Register(I2LocalizeMgr.Inst);
             await MgrCenter.Inst.Register(CountDownMgr.Inst);
             //await MgrCenter.Inst.Register(RedDotMgr.Inst);
             await MgrCenter.Inst.Register(PanelMgr.Inst);
             
             //在这里打开你的第一个界面
-            // PanelMgr.Inst.OpenPanel<LoginPanel>();
+            PanelMgr.Inst.OpenPanel<LoginPanel>();
             // PanelMgr.Inst.OpenPanel<FriendsPanel>();
             // PanelMgr.Inst.OpenPanel<FriendsPanel, EFriendsPanelViewEnum>(EFriendsPanelViewEnum.FrindsMessagesView);
-            PanelMgr.Inst.OpenPanel<HomePanel>();
+            // PanelMgr.Inst.OpenPanel<HomePanel>();
         }
 
         

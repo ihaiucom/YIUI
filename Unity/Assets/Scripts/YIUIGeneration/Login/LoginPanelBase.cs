@@ -32,7 +32,6 @@ namespace YIUI.Login
         public UnityEngine.UI.Button u_ComLoginBtn { get; private set; }
         public UnityEngine.UI.Button u_ComSignupBtn { get; private set; }
         public UnityEngine.UI.Button u_ComForgotPasswordBtn { get; private set; }
-        public YIUIBind.UIDataValueString u_DataTitle { get; private set; }
         protected UIEventP0 u_EventLogin { get; private set; }
         protected UIEventHandleP0 u_EventLoginHandle { get; private set; }
         protected UIEventP1<int> u_EventSignup { get; private set; }
@@ -43,6 +42,8 @@ namespace YIUI.Login
         protected UIEventHandleP1<string> u_EventInputPasswordHandle { get; private set; }
         protected UIEventP1<bool> u_EventRemember { get; private set; }
         protected UIEventHandleP1<bool> u_EventRememberHandle { get; private set; }
+        protected UIEventP0 u_EventOpenLanguage { get; private set; }
+        protected UIEventHandleP0 u_EventOpenLanguageHandle { get; private set; }
 
         
         protected sealed override void UIBind()
@@ -53,7 +54,6 @@ namespace YIUI.Login
             u_ComLoginBtn = ComponentTable.FindComponent<UnityEngine.UI.Button>("u_ComLoginBtn");
             u_ComSignupBtn = ComponentTable.FindComponent<UnityEngine.UI.Button>("u_ComSignupBtn");
             u_ComForgotPasswordBtn = ComponentTable.FindComponent<UnityEngine.UI.Button>("u_ComForgotPasswordBtn");
-            u_DataTitle = DataTable.FindDataValue<YIUIBind.UIDataValueString>("u_DataTitle");
             u_EventLogin = EventTable.FindEvent<UIEventP0>("u_EventLogin");
             u_EventLoginHandle = u_EventLogin.Add(OnEventLoginAction);
             u_EventSignup = EventTable.FindEvent<UIEventP1<int>>("u_EventSignup");
@@ -64,6 +64,8 @@ namespace YIUI.Login
             u_EventInputPasswordHandle = u_EventInputPassword.Add(OnEventInputPasswordAction);
             u_EventRemember = EventTable.FindEvent<UIEventP1<bool>>("u_EventRemember");
             u_EventRememberHandle = u_EventRemember.Add(OnEventRememberAction);
+            u_EventOpenLanguage = EventTable.FindEvent<UIEventP0>("u_EventOpenLanguage");
+            u_EventOpenLanguageHandle = u_EventOpenLanguage.Add(OnEventOpenLanguageAction);
 
         }
 
@@ -74,6 +76,7 @@ namespace YIUI.Login
             u_EventInputEmail.Remove(u_EventInputEmailHandle);
             u_EventInputPassword.Remove(u_EventInputPasswordHandle);
             u_EventRemember.Remove(u_EventRememberHandle);
+            u_EventOpenLanguage.Remove(u_EventOpenLanguageHandle);
 
         }
      
@@ -82,6 +85,7 @@ namespace YIUI.Login
         protected virtual void OnEventInputEmailAction(string p1){}
         protected virtual void OnEventInputPasswordAction(string p1){}
         protected virtual void OnEventRememberAction(bool p1){}
+        protected virtual void OnEventOpenLanguageAction(){}
    
    
     }

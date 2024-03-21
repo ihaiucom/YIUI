@@ -52,7 +52,6 @@ namespace YIUI.Login
         {
             await UniTask.CompletedTask;
             Debug.Log($"LoginPanel OnOpen");
-            u_DataTitle.SetValue("登录");
             u_ComLoginBtn.onClick.AddListener(onClickLoginBtn);
             return true;
         }
@@ -122,6 +121,11 @@ namespace YIUI.Login
             remeber = p1;
             Debug.Log($"OnEventRememberAction: {p1}");
             
+        }
+       
+        protected override void OnEventOpenLanguageAction()
+        {
+            OpenView<LanguagePopupView>();
         }
         #endregion Event结束
 
