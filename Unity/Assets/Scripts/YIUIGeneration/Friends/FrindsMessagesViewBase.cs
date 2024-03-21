@@ -22,10 +22,14 @@ namespace YIUI.Friends
         public override EWindowOption WindowOption => EWindowOption.None;
         public override EViewWindowType ViewWindowType => EViewWindowType.View;
         public override EViewStackOption StackOption => EViewStackOption.VisibleTween;
+        public UnityEngine.UI.LoopVerticalScrollRect u_ComLoopVerticalScroll { get; private set; }
+        public YIUI.Friends.FriendMessageItem u_UIFriendListMessage { get; private set; }
 
         
         protected sealed override void UIBind()
         {
+            u_ComLoopVerticalScroll = ComponentTable.FindComponent<UnityEngine.UI.LoopVerticalScrollRect>("u_ComLoopVerticalScroll");
+            u_UIFriendListMessage = CDETable.FindUIBase<YIUI.Friends.FriendMessageItem>("FriendListMessage");
 
         }
 

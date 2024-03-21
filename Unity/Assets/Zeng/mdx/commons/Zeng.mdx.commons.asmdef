@@ -1,0 +1,16 @@
+{
+    "name": "Zeng.mdx.commons",
+    "rootNamespace": "Zeng.mdx.commons",
+    "references": [
+    ],
+    "includePlatforms": [
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

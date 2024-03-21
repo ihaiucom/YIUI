@@ -66,7 +66,7 @@ namespace YIUI.Friends
 
         public async UniTask<bool> OnOpen(EFriendsPanelViewEnum p1)
         {
-            u_DataTab.SetValue((int)p1);
+            u_DataTab.SetValue((int)p1, false, false);
             await OpenViewAsync(p1.ToString());
             return true;
         }

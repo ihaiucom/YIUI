@@ -1,0 +1,18 @@
+{
+    "name": "Zeng.mdx.runtimes",
+    "rootNamespace": "Zeng.mdx.runtimes",
+    "references": [
+        "GUID:a34c6776355e78c46ac6c34f2b4ac00b",
+        "GUID:0bf5f40df7dfbd44080ec4fe8aeda13c",
+        "GUID:eccc7140335ee76438e644ac7f1626ae"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

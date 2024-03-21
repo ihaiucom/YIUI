@@ -13,22 +13,42 @@ namespace YIUI.Friends
     /// </summary>
     public sealed partial class FrindsMessagesView:FrindsMessagesViewBase
     {
+        private YIUILoopScroll<FriendMessageData, FriendMessageItem> loopScroll;
+        private List<FriendMessageData> dataList;
 
         #region 生命周期
         
         protected override void Initialize()
         {
             Debug.Log($"FrindsMessagesView Initialize");
+            dataList = new List<FriendMessageData>();
+            for (int i = 0; i < 50; i ++)
+            {
+                var data = new FriendMessageData();
+                data.role = new RoleData();
+                data.msg = new ChatMessageData();
+                dataList.Add(data);
+            }
+
+            loopScroll = new YIUILoopScroll<FriendMessageData, FriendMessageItem>(u_ComLoopVerticalScroll, RenderItem);
+        }
+
+        private void RenderItem(int index, FriendMessageData data, FriendMessageItem item, bool select)
+        {
+            Debug.Log($"RenderItem {index}");
+            item.SetData(data);
         }
 
         protected override void Start()
         {
-            Debug.Log($"FrindsMessagesView Start");
+            Debug.Log($"FrindsMessagesView Start dataList.Count={dataList.Count}");
+            loopScroll.SetDataRefresh(dataList);
         }
 
         protected override void OnEnable()
         {
-            Debug.Log($"FrindsMessagesView OnEnable");
+            Debug.Log($"FrindsMessagesView OnEnable dataList.Count={dataList.Count}");
+            loopScroll.SetDataRefresh(dataList);
         }
 
         protected override void OnDisable()

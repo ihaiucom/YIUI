@@ -1,0 +1,16 @@
+{
+    "name": "Adcimon.MdxImporter.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:afd3a1f91c995a341a62b299b4fcd124"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

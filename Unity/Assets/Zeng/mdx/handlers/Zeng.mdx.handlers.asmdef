@@ -1,0 +1,20 @@
+{
+    "name": "Zeng.mdx.handlers",
+    "rootNamespace": "Zeng.mdx.handlers",
+    "references": [
+        "Zeng.mdx.parsers",
+        "Unity.EditorCoroutines.Editor",
+        "Zeng.mdx.commons"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

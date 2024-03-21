@@ -6,6 +6,7 @@ using I2.Loc;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using YIUI.Friends;
+using YIUI.Home;
 using YIUI.Login;
 using YooAsset; //如果不是用的Yoo资源管理器就可以删除掉
 using Object = UnityEngine.Object;
@@ -175,7 +176,8 @@ namespace YIUIFramework
             //在这里打开你的第一个界面
             // PanelMgr.Inst.OpenPanel<LoginPanel>();
             // PanelMgr.Inst.OpenPanel<FriendsPanel>();
-            PanelMgr.Inst.OpenPanel<FriendsPanel, EFriendsPanelViewEnum>(EFriendsPanelViewEnum.FrindsMessagesView);
+            // PanelMgr.Inst.OpenPanel<FriendsPanel, EFriendsPanelViewEnum>(EFriendsPanelViewEnum.FrindsMessagesView);
+            PanelMgr.Inst.OpenPanel<HomePanel>();
         }
 
         
