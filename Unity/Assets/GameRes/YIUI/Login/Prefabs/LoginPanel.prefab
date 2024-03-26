@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Log In
+  m_text: "\u767B\u5F55"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fb4b51c5f4e84cfc940851f0728bfbc, type: 2}
   m_sharedMaterial: {fileID: -1895591174926498930, guid: 4fb4b51c5f4e84cfc940851f0728bfbc, type: 2}
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   mGUI_ShowTems: 1
   mGUI_ShowCallback: 0
   mLocalizeTarget: {fileID: 0}
-  mLocalizeTargetName: 
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &4221163248259342881
 GameObject:
   m_ObjectHideFlags: 0
