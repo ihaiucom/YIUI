@@ -1,0 +1,23 @@
+
+{
+    "ActionInterrupts" : [
+        {
+            "InterruptName" : "To0638470024852060803JN9V8P",
+            "ActionID"      : "0638470024852060803JN9V8P",
+            "Enabled"       : false,
+            "CheckAllCondition" : false,
+            "CrossFadeDuration" : 0.0,
+            "Conditions"        : [
+            ]
+        },
+        {
+            "InterruptName" : "To06384700296603961944HF3um",
+            "ActionID"      : "06384700296603961944HF3um",
+            "Enabled"       : false,
+            "CheckAllCondition" : false,
+            "CrossFadeDuration" : 0.0,
+            "Conditions"        : [
+            ]
+        }
+    ]
+}

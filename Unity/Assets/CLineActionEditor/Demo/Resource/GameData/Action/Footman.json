@@ -1,0 +1,75 @@
+
+{
+    "Property" : [
+        {
+            "ID" : "0638470024852060803JN9V8P",
+            "Name" : "Walk",
+            "CanMove" : true,
+            "CanRotate" : false,
+            "CanHurt"   : false,
+            "CanHit"    : true,
+            "IgnoreGravity" : false,
+            "FaceTarget"    : false,
+            "IsGod"         : false,
+            "Level"         : 0,
+            "ActionStatus"  : "Move",
+            "TotalTime"     : 833,
+            "DefaultAction" : "Walk",
+            "Events"        : [
+                {
+                    "TrackName" : "Animation 0",
+                    "TrackIndex" : 0,
+                    "TriggerType" : "Duration",
+                    "TriggerTime" : 0,
+                    "Duration"    : 833,
+                    "EventType"   : "EET_PlayAnim",
+                    "EventData"   : {
+                        "AnimName" : "Walk",
+                        "AnimType" : "EAT_Force",
+                        "TriggerName" : "",
+                        "TriggerValue" : ""
+                    }
+                }
+            ],
+            "Interrupts"    : [
+            ],
+            "AttackDefs"    : [
+            ]
+        },
+        {
+            "ID" : "06384700296603961944HF3um",
+            "Name" : "Attack - 1",
+            "CanMove" : false,
+            "CanRotate" : false,
+            "CanHurt"   : false,
+            "CanHit"    : true,
+            "IgnoreGravity" : false,
+            "FaceTarget"    : false,
+            "IsGod"         : false,
+            "Level"         : 0,
+            "ActionStatus"  : "Attack",
+            "TotalTime"     : 3160,
+            "DefaultAction" : "Attack - 1",
+            "Events"        : [
+                {
+                    "TrackName" : "Animation 0",
+                    "TrackIndex" : 0,
+                    "TriggerType" : "Duration",
+                    "TriggerTime" : 0,
+                    "Duration"    : 3160,
+                    "EventType"   : "EET_PlayAnim",
+                    "EventData"   : {
+                        "AnimName" : "Death",
+                        "AnimType" : "EAT_Force",
+                        "TriggerName" : "",
+                        "TriggerValue" : ""
+                    }
+                }
+            ],
+            "Interrupts"    : [
+            ],
+            "AttackDefs"    : [
+            ]
+        }
+    ]
+}

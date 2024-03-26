@@ -1,0 +1,16 @@
+
+{
+    "Property" : [
+        {
+            "ID" : "",
+            "Name" : "Footman",
+            "Description" : "",
+            "Prefab"      : "/Footman.prefab",
+            "StartupAction" : "",
+            "PlayerSex"     : "EPS_Man",
+            "VictoryActionList" : [
+            ],
+            "ActionGroup"       : "Footman"
+        }
+    ]
+}
